@@ -61,11 +61,9 @@ for row in array:
     except NameError:
         twodarray = [row.split(" ")]
 
-#Turn all the strings of numbers into ints
-for i in range(0, len(twodarray), 1):
-    for j in range(0, len(twodarray[0]), 1):
-        twodarray[i][j] = int(twodarray[i][j])
 
+#Turn all the strings of numbers into ints
+twodarray = [map(int, x) for x in twodarray]
 
 #Check going down (and also up, as mult is commutative)
 largestmultiple = 0

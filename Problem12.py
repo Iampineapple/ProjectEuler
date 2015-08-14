@@ -42,6 +42,6 @@ def divisors(n):
 num = 7
 while(divisors(triangleNumber(num)) < 500):
     num +=1
-print triangleNumber(num)
+print "The first triangle number with over 500 divisors is ", triangleNumber(num)
 raw_input("Press any key to exit")
 
